@@ -1,0 +1,20 @@
+name: My First Self-Made (50%) Action!
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run a one-line script
+      run: echo Hello!
+
+    - name: Run a multi-line script
+      run: |
+        echo This is my first action on GitHub!
+        echo I will try to make more soon...
